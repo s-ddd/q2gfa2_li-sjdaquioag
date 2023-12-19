@@ -1,0 +1,75 @@
+*{margin: 0}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+.celestial_bodies{
+    display: inline-block;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+}
+#banner{
+background: rgba(0, 0, 0, 1);
+}
+#athenbrynus{
+    background: url(../images/style/athenbrynus.gif);
+    width: 100px;
+    height: 100px;
+    transform: translate(80vw,-10vh);
+    transition: 100s;
+}
+#enigmatia{
+    background: url(../images/style/enigmatia.gif);
+    width: 400px;
+    height: 400px;
+}
+#exoreticus{
+    background: url(../images/style/exoreticus.gif);
+    width: 100px;
+    height: 100px;
+    animation-name: exoreticus_movement;
+    animation-duration:100s;
+}
+#phantoma{
+    background: url(../images/style/phantoma.gif);
+    width: 100px;
+    height: 100px;
+    transform: translate(-2vw,23vh);
+    animation-name: phantoma_movement;
+    animation-duration:100s;
+}
+#twinkles{
+    color:white;
+    position:relative;
+    font-size:xx-large;
+    animation-name: staranimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes phantoma_movement{
+    0%{transform: translate(80vw,-10vh);}
+    10%{transform: translate(70vw,-9vh);}
+    20%{transform: translate(60vw,-8vh);}
+    30%{transform: translate(50vw,-7vh);}
+    40%{transform: translate(40vw,-6vh);}
+    50%{transform: translate(30vw,-5vh);}
+    60%{transform: translate(20vw,-4vh);}
+    70%{transform: translate(10vw,-3vh);}
+    80%{transform: translate(0vw,-2vh);}
+    90%{transform: translate(-10vw,-1vh);}
+    100%{transform: translate(-20vw,0vh);}
+}
+
+@keyframes exoreticus_movement{
+    from{transform: translate(23vw,-27vh);}
+    to{transform: translate(-12vw,16vh);}
+}
+
+@keyframes staranimation{
+    from{visibility: hidden}
+    to{visibility: visible}
+}
